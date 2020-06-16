@@ -7,12 +7,13 @@
 using namespace std;
 
 
-int findMatches(Wordlist, Grid) {   //inputs type class for wordlist and grid
+int findMatches(class Wordlist, class Grid) {   //inputs type class for wordlist and grid
     int row = row; int col = col; 
     int i =0; int j = 0; int k =0;                      //various loop counters 
     int rowCount = 0; int colCount = 0;
     bool found;                                          //boolean type to check if word from the grid is found in the list
     int grid[row][col];                                  //n x n grid aka matrix, search in all 8 directions, use vectors?
+    string wordn;
     Wordlist Wordlist= Wordlist;                             //have wordlist to compare to
     string newWord;                                      //creating a word from grid
     string newLetter;                                    //pulling a letter from grid
@@ -61,9 +62,10 @@ int findMatches(Wordlist, Grid) {   //inputs type class for wordlist and grid
         i = i+1;
     }
     while(k < gridlist.length()){                   //compare to the wordlist
-        found = Wordlist::lookup(gridlist(k));      //check to see if the word in gridlist is found in wordlist
+        wordn = gridlist(k);
+        found = Wordlist.lookup(wordn);      //check to see if the word in gridlist is found in wordlist
         if(!found){
-        gridlist.remove(k);                         //remove any words not found in wordlist from gridlist
+        gridlist.remove(wordn);                         //remove any words not found in wordlist from gridlist
         }
         k = k+1;                                    //next word to look up
     }

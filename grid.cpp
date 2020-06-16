@@ -5,6 +5,7 @@
 #include<iostream>
 #include<fstream>
 #include<string>
+#include "grid.h"
 using namespace std;
 
 Grid::Grid() {
@@ -18,9 +19,9 @@ Grid::Grid() {
     }
 
 //read the first number in the first line in order to get the size of the grid
-//    int sLine;
+    int sLine;
 
-//    n >> sLine;
+    n >> sLine;
     
     column = 0;     //initialize column to 0 to start
     row = 0;        //initialize row to 0 to start
