@@ -11,5 +11,5 @@ using namespace std;
 
 
 //global function findMatches()
-int findMatches(class Wordlist, class Grid) {}   //inputs type class for wordlist and grid
+int findMatches(class Wordlist, class Grid) {}  //inputs type class for wordlist and grid
 
