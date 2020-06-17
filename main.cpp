@@ -4,6 +4,7 @@
 #include "grid.h"
 #include "heap.h"
 #include "search.h"
+#include "hash.h"
 using namespace std;
 
 int main()

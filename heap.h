@@ -6,62 +6,44 @@ using namespace std;
 
 template <typename T>
 class heap {
-    public:
-    //regular functions
-   
-    //max-heap functions
-    initMaxHeap(){
-
-    }
-
-    maxHeapify(){
-
-    }
-
-    buildMaxHeap(){
-
-    }
-
-    //min-heap functions
-    initMinHeap(){
-
-    }
-
-    minHeapify(){
-
-    }
-
-    buildMinHeap(){
-
-    }
-
-    //main sorting algo for heap
-    HeapSort(){
-
-    }
 
     //variables and functions only used by this class
     private:
 
     vector<T> lump;
 
-    makeheap(const vector<T>){
+    int makeheap(const vector<T>);
 
-    }
+    int parent(int);
 
-    parent(int){
+    int left(int);
 
-    }
+    int right(int);
 
-    left(int){
+    int getitem(int n);
 
-    }
+    public:
+    //variables used in the public functions
+    int left; 
+    int right;
+    int size;
+    int smallest;
+    int biggest;
+    int parent;
+    //max-heap functions
+    int initMaxHeap();
 
-    right(int){
+    int maxHeapify();
 
-    }
+    int buildMaxHeap();
 
+    //min-heap functions
+    int initMinHeap();
 
+    int minHeapify();
 
+    int buildMinHeap();
 
+    //main sorting algo for heap
+    int HeapSort();
 };
